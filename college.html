@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GL Bajaj Student Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/fullcalendar.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/fullcalendar.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">🎓 GL BAJAJ</div>
+    <div class="title">Student Dashboard</div>
+    <button class="toggle-dark-mode">🌙</button>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" id="search-bar" placeholder="Search..." />
+  </div>
+
+  <!-- Notifications Section -->
+  <div class="notifications"></div>
+
+  <main class="dashboard">
+    <div class="tile" data-img="college">College Info</div>
+    <div class="tile alert" data-img="alert">Attendance Alerts</div>
+    <div class="tile" data-img="attendance">My Attendance</div>
+    <div class="tile wide" data-img="students">Student Details</div>
+    <div class="tile" data-img="library">Library Info</div>
+    <div class="tile" data-img="notice">Notices</div>
+    <div class="tile" data-img="placement">Placement Info</div>
+    <div class="tile" data-img="result">View Result</div>
+    <div class="tile" data-img="fees">Pay Fees</div>
+    <div class="tile" data-img="admit">Admit Card</div>
+    <div class="tile wide" data-img="transfer">
+      <h3>Transfer Attendance</h3>
+      <form id="transferForm">
+        <input type="text" id="from" placeholder="Your Roll No" required />
+        <input type="text" id="to" placeholder="Friend's Roll No" required />
+        <button type="submit">Transfer</button>
+        <div id="transferStatus"></div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Calendar -->
+  <div id="calendar"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
